@@ -1,6 +1,118 @@
 /* Global Styles */
 /* Hero Section Centered */
+.education {
+  text-align: center;
+  background-color: #0d1b2a;
+  padding: 80px 20px;
+}
+
+.edu-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.edu-box {
+  display: flex;
+  align-items: center;
+  background: #1b2d44;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(199, 125, 255, 0.1);
+  width: 100%;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.edu-box:hover {
+  transform: translateY(-5px);
+}
+
+.edu-box i {
+  font-size: 30px;
+  color: #c77dff;
+  min-width: 40px;
+}
+
+.edu-content h3 {
+  margin: 0 0 5px;
+  color: #c77dff;
+  font-size: 1.2rem;
+}
+
+.edu-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.edu-content span {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .edu-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edu-box i {
+    margin-bottom: 10px;
+  }
+}
+
 /* Skills Section */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #333;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer strong {
+  font-size: 1.1rem;
+  color: #c77dff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Social Icons Like Screenshot */
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #00fff7;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* Final copyright */
+footer p:last-of-type {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
 .section.skills {
   background-color: #0d1b2a;
   color: #fff;
@@ -446,28 +558,4 @@ body {
 .contact button:hover {
   background: #ffffff;
   color: #000;
-}
-
-/* Footer */
-footer {
-  background: #1b263b;
-  text-align: center;
-  padding: 20px;
-  margin-top: 60px;
-  color: #fff;
-}
-
-.social-icons {
-  margin: 10px 0;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  color: #c77dff;
-  font-size: 20px;
-  transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
 }
